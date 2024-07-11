@@ -12,7 +12,7 @@ logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 
-class Digital_FileRenameBot(Client):
+class Quick_FileRenameBot(Client):
     def __init__(self):
         super().__init__(
             name="Quick_FileRenameBot",
