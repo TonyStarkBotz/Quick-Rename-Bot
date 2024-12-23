@@ -3,27 +3,27 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # TonyStarkBotz client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "20662362")
+    API_HASH = os.environ.get("API_HASH", "29f99055e3f69dc7ea394dbf5e0c7dc5")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7451365044:AAEP38Hto55fx-SU5q5H36ETV8i7s_DSiPY") 
 
     # premium account string session required 😢 
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # database config
     DB_NAME = os.environ.get("DB_NAME","Quick_Rename_Bot")     
-    DB_URL = os.environ.get("DB_URL","")
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://SaveR:SaveR@restrict.fj8cdla.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     PIC = os.environ.get("PIC", "https://graph.org/file/31c39410431e41677f742.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-100"))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5019668523').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002302296385"))
 
     #force subs
     try:
         FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
     except:
-        FORCE_SUB = os.environ.get("FORCE_SUB", "xmenmt01")
+        FORCE_SUB = os.environ.get("FORCE_SUB", "TonyStark_Botz")
         
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
@@ -31,7 +31,7 @@ class Config(object):
 
 class tony(object):
     # part of text configuration
-    START_TXT = """<b>Ｈ𝙰𝙸, {}👋
+    START_TXT = """<b>Ｈ𝙸, {}👋
 
 𝚃ʜɪs 𝙸s 𝙰ɴ 𝙰ᴅᴠᴀᴄᴇᴅ 𝙰ɴᴅ 𝚈ᴇᴛ 𝙿ᴏᴡᴇʀғᴜʟ 𝚁ᴇɴᴀᴍᴇ 𝙱ᴏᴛ
 𝚄sɪɴɢ 𝚃ʜɪs 𝙱ᴏᴛ 𝚈ᴏᴜ 𝙲ᴀɴ 𝚁ᴇɴᴀᴍᴇ & 𝙲ʜᴀɴɢᴇ 𝚃ʜᴜᴍʙɴᴀɪʟ 𝙾ғ 𝚈ᴏᴜʀ 𝙵ɪʟᴇ 
@@ -144,7 +144,7 @@ Exᴀᴍᴩʟᴇ:- `/set_prefix @MovieTimesTV`
     
 » 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/TonyStarkBotz/Quick-Rename-Bot>Quick-Rename-Bot</a>
 
-• ❣️ <a href=https://github.com/TonyStarkBotz>TonyStarkBotz</a> """
+• ❣️ <a href=https://t.me/TonyStark_Botz>TonyStarkBotz</a> """
     # ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
     SEND_METADATA = """
